@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>TODO supply a title</title>
+        
+    </h:head>
+    <body>
+        <h:form>
+        <div align="center" style="background-color: #f2efef; height: 200px">
+            <p:commandButton style="font-size: 13px; top: 160px; left: 370px" value="PaginaInicial" action="PaginaInicial.xhtml"/>
+                <h1 style="font-size: 100px; position: relative; top: -50px"> <span style="color:#bc0710 ">XP</span><span style="color:#030838 ">Estoque</span></h1>
+        </div>
+       
+      <h1 style="font-size: 50px">Excluir Usuário</h1>
+      <div style="height: 80px">
+        <p:outputLabel style="font-size:20px " value="Cpf: "/>
+        <p:inputText value="#{usuarioCONTROLLER.usuario.cpf}"/>
+        <p:commandButton value=" Ok" action="#{usuarioCONTROLLER.deletarUsuario()}"/>
+      </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+       <div style="background-color: #d6cbab; width: 100%px; height: 100px ">
+             
+         </div>
+        </h:form>
+    </body>
+</html>

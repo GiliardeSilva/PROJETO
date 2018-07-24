@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form style="font-size: ">
+            <div align="center" style="background-color: #f2efef">
+                <p:commandButton style="font-size: 13px; top: 160px; left: 500px" value=" Cadastre-se" action="#{beanCadastrarUsuario.linkar()}"/>
+                <h1 style="font-size: 100px; position: relative; top: -50px"> <span style="color:#bc0710 ">XP</span><span style="color:#030838 ">Estoque</span></h1>
+                </div>
+           <br/>
+           <div align="center">
+               <h:panelGrid columns="2" style="position: relative; top: -20px" >
+        <p:outputLabel style="font-size:20px " value="Login: "/>
+        <p:inputText value="#{beanLogin.usuario}"/>      
+        <p:outputLabel style="font-size:20px " value="Senha: "/>
+        <p:password value="#{beanLogin.senha}"/>
+        <p:commandButton style="font-size: 13px" value="Entrar" action="#{beanLogin.logar()}"/>
+        
+               </h:panelGrid>
+               <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>
+           </div>
+           
+           <div style="background-color: #d6cbab; width: 100%px; height: 100px ">
+             
+         </div>
+        </h:form>
+        
+    </h:body>
+</html>

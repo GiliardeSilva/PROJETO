@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>TODO supply a title</title>
+      
+    </h:head>
+    <body>
+        <h:form>
+        <div align="center" style="background-color: #f2efef; height: 200px; position: relative; top: -60px">
+                <h1 style="font-size: 100px; position: relative; top: 45px"> <span style="color:#bc0710 ">XP</span><span style="color:#030838 ">Estoque</span></h1>
+        </div>
+       <br/><br/>
+      
+        <p:menubar style="position: relative; top: -90px">
+            <p:submenu label="Produtos" style="font-size: 25px">
+                <p:menuitem value="Buscar" style="font-size: 25px" action="#{beanBuscarProduto.linkar()}"/>
+                <p:menuitem value="Todos" style="font-size: 25px" action="#{produtoCONTROLLER.mostrarTodos()}"/>
+                <p:menuitem value="Inserir" style="font-size: 25px" action="#{beanInserirProduto.linkar()}"/>
+                <p:menuitem value="Excluir" style="font-size: 25px" action="#{beanExcluirProduto.linkar()}"/>
+                <p:menuitem value="Atualizar" style="font-size: 25px" action="#{beanAtualizarProduto.linkar()}"/>
+            </p:submenu>
+            <p:submenu label="Fornecedor"  style="font-size: 25px">
+                 <p:menuitem value="Buscar" style="font-size: 25px" action="#{beanBuscarFornecedor.linkar()}"/>
+                 <p:menuitem value="Todos" style="font-size: 25px" action="#{fornecedorCONTROLLER.mostrarTodos()}"/>
+                 <p:menuitem value="Inserir" style="font-size: 25px" action="#{beanInserirFornecedor.linkar()}"/>
+                 <p:menuitem value="Excluir" style="font-size: 25px" action="#{beanExcluirFornecedor.linkar()}"/>
+           <p:menuitem value="Atualizar" style="font-size: 25px" action="#{beanAtualizarFornecedor.linkar()}"/>
+            </p:submenu>
+            <p:submenu label="Estoque"  style="font-size: 25px">
+                 <p:menuitem value="Todos" style="font-size: 25px"/>
+                 <p:menuitem value="Entrada" style="font-size: 25px" action="#{beanEntrada.linkar()}"/>
+                 <p:menuitem value="Saída" style="font-size: 25px" action="#{beanSaida.linkar()}"/>
+            </p:submenu>
+            <p:submenu label="Relatório"  style="font-size: 25px">
+                <p:menuitem value="Entrada" style="font-size: 25px" action="#{entradaCONTROLLER.mostrarTodos()}"/>
+                <p:menuitem value="Saída" style="font-style: 25px" action="#{saidaCONTROLLER.mostrarTodos()}"/>
+            </p:submenu>
+             <p:submenu label="Usuário" style="font-size: 25px">
+                 <p:menuitem value="Buscar" style="font-size: 25px" action="#{beanBuscarUsuario.linkar()}"/>
+                <p:menuitem value="Todos" style="font-size: 25px" action="#{usuarioCONTROLLER.mostrarTodos()}"/>           
+                <p:menuitem value="Excluir" style="font-size: 25px" action="#{beanExcluirUsuario.linkar()}"/>
+                <p:menuitem value="Atualizar" style="font-size: 25px" action="#{beanAtualizarUsuario.linkar()}"/>
+            </p:submenu>
+            <p:menuitem value="Sair" action="#{beanLogin.deslogar()}" style="font-size: 25px" />
+        </p:menubar>
+        <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>
+       <div style="background-color: #d6cbab; width: 100%px; height: 100px ">
+             <h1 style="font-size: 20px"> </h1>
+         </div>
+     
+       
+     
+        </h:form>
+    </body>
+</html>
